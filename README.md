@@ -60,7 +60,7 @@ js-practice/
 
 ## 🌟 **Projects & Portfolio**
 
-- [Personal website (built with Webflow & custom code)](https://www.kamycoding.com)
+- [Personal Website – kamycoding.com (built with Webflow & custom code)](https://www.kamycoding.com)
 - [Other projects coming soon!]
 
 ---
