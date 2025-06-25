@@ -7,7 +7,8 @@
 let myAge = 27;
 let myCity = "Sankt-Augustin";
 let isStudent = true;
-
+fun
 console.log(myAge);
 console.log(myCity);
 console.log(isStudent);
+
