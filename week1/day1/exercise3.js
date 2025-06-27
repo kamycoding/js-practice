@@ -47,3 +47,17 @@ if (a > b && a > c) {
 } else {
   console.log("c is the largest number");
 }
+
+let ageNumber = 18;
+let average = 15;
+
+if (ageNumber >= 18 && average > 17) {
+  console.log("sehr gut student");
+} else if (ageNumber > 13 && ageNumber < 18 && average > 15 && average < 17) {
+  console.log("gut student");
+} else if (average > 10) {
+  console.log("du muss mehr lernen");
+} else {
+  console.log("normal student");
+}
+// bis bald
