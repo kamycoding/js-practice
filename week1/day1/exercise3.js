@@ -61,3 +61,4 @@ if (ageNumber >= 18 && average > 17) {
   console.log("normal student");
 }
 // bis bald
+// ich bin
