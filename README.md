@@ -1,84 +1,107 @@
-# JavaScript & Frontend Learning Journey 🚀
+JavaScript & Frontend Learning Journey 🚀
 
-Welcome to my personal journey of becoming a professional JavaScript and Frontend Developer!  
-This repository contains my daily exercises, code challenges, and mini-projects as I dive deep into JavaScript, React, and modern frontend skills.
+Welcome to my personal journey of becoming a professional JavaScript and Frontend Developer.
 
----
+This repository contains topic-based exercises, code challenges, and mini-projects as I dive into JavaScript, React, and modern frontend development.
 
-## 🚩 **About Me**
+🚩 About Me
 
-- 👋 Hi, I’m **kamycoding**, a passionate web developer based in Germany.
-- 💡 My goal: Become a professional Front-End Developer and land a job in Germany or work remotely on international projects.
-- 🌍 I have experience building websites with **Webflow**, and now I’m focused on mastering **JavaScript**, **React**, and real coding.
+👋 Hi, I’m @kamycoding – a frontend developer based in Germany.
 
----
+💡 Goal: Work as a professional Frontend Developer in Germany or remotely on international projects.
 
-## 📚 **Learning Plan**
+🌍 Started with Webflow, now building everything with code — JavaScript, React, and beyond.
 
-- **Week 1:** JavaScript Fundamentals (variables, data types, arrays, functions, loops, conditionals)
-- **Week 2:** Advanced JS (ES6+, DOM, events, objects, array methods)
-- **Week 3:** React Basics (components, state, props, events, first mini-project)
-- **Week 4:** React Advanced (hooks, context, API calls, deployment), Git & GitHub
+🌐 Visit my website: www.kamycoding.com
 
-> I commit my code daily, document my progress, and share my challenges and solutions.
+🔗 LinkedIn: kamyarzamanfar
 
----
+📚 Learning Topics
 
-## 🛠️ **Skills Practiced**
+This repo is organized by topic (not by week):
 
-- HTML, CSS (responsive design, Flexbox, Grid)
-- JavaScript (from basics to advanced)
-- React.js (starting soon!)
-- Git & GitHub (version control, collaboration)
-- Working with APIs & deployment
+✅ Values & Variables
 
----
+✅ Data Types
 
-## 📂 **Repository Structure**
+✅ Let / Const / Var
 
-```
+⏳ Functions, Arrays, Objects
+
+⏳ DOM, Events, APIs
+
+⏳ React.js (coming soon)
+
+✅ Git & GitHub
+
+✅ HTML/CSS practice with JS integration
+
+I document each topic with bilingual comments (EN + DE).
+
+🛠️ Skills in Practice
+
+HTML & CSS (Flexbox, Grid, responsive design)
+
+JavaScript (modern syntax, real-world logic)
+
+React.js (coming soon)
+
+Git & GitHub
+
+APIs & Deployment
+
+📂 Folder Structure
+
 js-practice/
-│
-├── week1/
-│   ├── day1/
-│   ├── day2/
-│   └── ...
-├── week2/
-│   └── ...
-├── week3/
-│   └── ...
-├── week4/
-│   └── ...
+├── 01-values-and-variables/
+├── 02-data-types/
+├── 03-let-const-var/
+├── ...
 └── projects/
-    └── [mini-projects here]
-```
 
-- Each **week** contains daily exercises and code challenges.
-- **Projects** folder contains mini-projects built during this journey.
+Each folder contains focused examples, exercises, and index.html to preview results in the browser.
 
----
+🌟 Projects & Portfolio
 
-## 🌟 **Projects & Portfolio**
+[![Website](https://img.shields.io/badge/Website-kamycoding.com-0A192F?style=for-the-badge&logo=firefox&logoColor=white)](https://www.kamycoding.com)
 
-- [Personal Website – kamycoding.com (built with Webflow & custom code)](https://www.kamycoding.com)
-- [Other projects coming soon!]
+More mini-projects coming soon...
 
----
+🤝 Connect with Me
 
-## 🤝 **Connect with Me**
+[![Website](https://img.shields.io/badge/Website-kamycoding.com-0A192F?style=for-the-badge&logo=firefox&logoColor=white)](https://www.kamycoding.com)
 
-- [GitHub Profile](https://github.com/kamycoding)
-- [LinkedIn](https://www.linkedin.com/in/kamyarzamanfar/)
+[![GitHub](https://img.shields.io/badge/GitHub-kamycoding-181717?style=for-the-badge&logo=github)](https://github.com/kamycoding)
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kamyarzamanfar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamyarzamanfar/)
 
-## 🇩🇪 **Über mich (auf Deutsch)**
+🇩🇪 Über mich (Deutsch)
 
-Hallo!  
-Ich bin **kamycoding**, ein motivierter Webentwickler mit Wohnsitz in Deutschland.  
-Mein Ziel ist es, ein professioneller Frontend-Entwickler zu werden und in innovativen Unternehmen oder als Freelancer zu arbeiten.  
-Dieses Repository dokumentiert meinen Lernprozess und zeigt meine Fähigkeiten in JavaScript, React und modernen Webtechnologien.
+Hallo! Ich bin kamycoding, ein motivierter Webentwickler mit Wohnsitz in Deutschland 🇩🇪.
 
----
+🌟 Mein Ziel ist es, als professioneller Frontend-Entwickler in Deutschland zu arbeiten – oder international als Remote-Freelancer.
 
-### _Feel free to check out my progress, and don’t hesitate to reach out for collaboration or job opportunities!_
+👨‍💻 Ich habe mit Webflow angefangen und entwickle nun eigene Projekte mit JavaScript, React und modernen Webtechnologien.
+
+📁 Dieses Repository enthält Übungen, Codebeispiele und Mini-Projekte, die thematisch organisiert sind:
+
+Werte & Variablen
+
+Datentypen
+
+let / const / var
+
+Funktionen, Arrays, Objekte
+
+DOM, Events & APIs
+
+React.js (bald verfügbar)
+
+Git, GitHub & Deployment
+
+📝 Viele Kommentare sind zweisprachig (Englisch + Deutsch), um sowohl zu lernen als auch zu lehren.
+
+[![Website](https://img.shields.io/badge/Website-kamycoding.com-0A192F?style=for-the-badge&logo=firefox&logoColor=white)](https://www.kamycoding.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kamyarzamanfar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamyarzamanfar/)
+
+Danke fürs Vorbeischauen – gerne Feedback dalassen oder für Kollaborationen kontaktieren! 😊
