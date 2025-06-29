@@ -62,6 +62,8 @@ js-practice/
 ├── 09-react-basics/            # Starting React (coming soon)
 └── projects/                   # Mini-projects built along the way
 
+
+
 Each folder contains focused examples, exercises, and index.html to preview results in the browser.
 
 🌟 Projects & Portfolio
