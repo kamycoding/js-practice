@@ -1,4 +1,5 @@
-JavaScript & Frontend Learning Journey 🚀
+<h1><strong>JavaScript & Frontend Learning Journey 🚀</strong></h1>
+
 
 Welcome to my personal journey of becoming a professional JavaScript and Frontend Developer.
 
@@ -12,9 +13,9 @@ This repository contains topic-based exercises, code challenges, and mini-projec
 
 🌍 Started with Webflow, now building everything with code — JavaScript, React, and beyond.
 
-🌐 Visit my website: www.kamycoding.com
+[![Website](https://img.shields.io/badge/Website-kamycoding.com-0A192F?style=for-the-badge&logo=firefox&logoColor=white)](https://www.kamycoding.com)
 
-🔗 LinkedIn: kamyarzamanfar
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kamyarzamanfar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamyarzamanfar/)
 
 📚 Learning Topics
 
