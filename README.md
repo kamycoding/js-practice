@@ -1,11 +1,10 @@
 <h1><strong>JavaScript & Frontend Learning Journey 🚀</strong></h1>
 
-
 Welcome to my personal journey of becoming a professional JavaScript and Frontend Developer.
 
 This repository contains topic-based exercises, code challenges, and mini-projects as I dive into JavaScript, React, and modern frontend development.
 
-🚩 About Me
+# # 🚩 About Me
 
 👋 Hi, I’m @kamycoding – a frontend developer based in Germany.
 
@@ -51,14 +50,17 @@ Git & GitHub
 
 APIs & Deployment
 
-📂 Folder Structure
+## 📂 Folder Structure
 
+```text
 js-practice/
-├── 01-values-and-variables/
-├── 02-data-types/
-├── 03-let-const-var/
-├── ...
-└── projects/
+├── 01-values-and-variables/    # Basics of variables and console
+├── 02-data-types/              # Understanding primitive types
+├── 03-let-const-var/           # Variable declarations in JS
+...
+├── 08-advanced-js/             # Closures, scope, this, etc.
+├── 09-react-basics/            # Starting React (coming soon)
+└── projects/                   # Mini-projects built along the way
 
 Each folder contains focused examples, exercises, and index.html to preview results in the browser.
 
@@ -106,3 +108,4 @@ Git, GitHub & Deployment
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kamyarzamanfar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamyarzamanfar/)
 
 Danke fürs Vorbeischauen – gerne Feedback dalassen oder für Kollaborationen kontaktieren! 😊
+```
