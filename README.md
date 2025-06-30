@@ -52,7 +52,7 @@ APIs & Deployment
 
 ## 📂 Folder Structure
 
-```text
+```
 js-practice/
 ├── 01-values-and-variables/    # Basics of variables and console
 ├── 02-data-types/              # Understanding primitive types
@@ -61,8 +61,7 @@ js-practice/
 ├── 08-advanced-js/             # Closures, scope, this, etc.
 ├── 09-react-basics/            # Starting React (coming soon)
 └── projects/                   # Mini-projects built along the way
-
-
+```
 
 Each folder contains focused examples, exercises, and index.html to preview results in the browser.
 
@@ -110,4 +109,7 @@ Git, GitHub & Deployment
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kamyarzamanfar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamyarzamanfar/)
 
 Danke fürs Vorbeischauen – gerne Feedback dalassen oder für Kollaborationen kontaktieren! 😊
+
+```
+
 ```
