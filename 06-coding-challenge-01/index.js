@@ -60,3 +60,14 @@ console.log("Test 2 - Philip BMI:", philipBMI2);
 console.log("Test 2 - Philip has higher BMI:", philipHigherBMI2);
 
 // ✅ Finished with bilingual comments 🇬🇧🇩🇪
+
+
+
+
+
+
+
+
+
+
+
