@@ -41,3 +41,21 @@ console.log(typeof favourite);
 if (favourite === 13) {
   console.log("Super!");
 }
+
+
+// exp
+
+const hasDriverLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriverLicense && hasDriverLicense); // true
+console.log(hasDriverLicense || hasGoodVision); // true
+console.log(!hasDriverLicense); // false
+
+const shouldDrive = hasDriverLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log("Kamy is able to drive!");
+} else {
+  console.log("someone else should drive");
+}
