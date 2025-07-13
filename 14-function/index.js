@@ -39,6 +39,47 @@ console.log(typeof showMessage);
 function dublicate(number) {
   const resault = number * 2; // Multiply number by 2 / Zahl mit 2 multiplizieren
   console.log(resault); // Log the result / Ergebnis ausgeben
+  return;
 }
 
 dublicate(3); // Call with 3 / Aufruf mit 3
+
+// Function declaration
+function sayMyName(name) {
+  console.log(`Your name is ${name} - 1`);
+}
+
+// Function Expression
+const sayMyName2 = function (name) {
+  console.log(`Your name is ${name} - 2`);
+};
+
+sayMyName("kamy");
+sayMyName2("kamy");
+
+// Anonymous Function
+// function () {
+
+// }
+
+(function () {
+  console.log("I am IIFE");
+})();
+
+(function (name) {
+  console.log(`I am ${name}`);
+})("IIFE");
+
+// Arrow Function | ES6
+
+// const sum = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+// const sum = (num1, num2) => {
+//   return num1 + num2;
+// };
+const sum = (num1, num2) => num1 + num2;
+
+const resault = sum(1, 2);
+console.log(resault);
