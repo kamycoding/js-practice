@@ -83,3 +83,18 @@ const sum = (num1, num2) => num1 + num2;
 
 const resault = sum(1, 2);
 console.log(resault);
+
+// EX 1
+const num1 = +prompt("Number 1 :");
+const num2 = +prompt("Number 2 :");
+function sumTwoNumbers(number1, number2) {
+  const sum = number1 + number2;
+
+  alert("Number1 + Number2 = " + sum);
+}
+
+if (isNaN(num1) || isNaN(num2)) {
+  alert("Just Number please :)")
+}
+
+sumTwoNumbers(num1, num2);
