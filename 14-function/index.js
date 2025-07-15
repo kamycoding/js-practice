@@ -85,16 +85,56 @@ const resault = sum(1, 2);
 console.log(resault);
 
 // EX 1
-const num1 = +prompt("Number 1 :");
-const num2 = +prompt("Number 2 :");
-function sumTwoNumbers(number1, number2) {
-  const sum = number1 + number2;
+// const num1 = +prompt("Number 1 :");
+// const num2 = +prompt("Number 2 :");
+// function sumTwoNumbers(number1, number2) {
+//   const sum = number1 + number2;
 
-  alert("Number1 + Number2 = " + sum);
+//   alert("Number1 + Number2 = " + sum);
+// }
+
+// if (isNaN(num1) || isNaN(num2)) {
+//   alert("Just Number please :)");
+// } else {
+//   sumTwoNumbers(num1, num2);
+// }
+
+// EX 2
+// const userNumber = +prompt("Number : ");
+
+// function isEverOrOdd(number) {
+//   if (userNumber % 2 === 0) {
+//     alert("Your number is Even !");
+//   } else {
+//     alert("Your number is Odd");
+//   }
+// }
+
+// if (isNaN(userNumber)) {
+//   alert("Just Number :)");
+// } else {
+//   isEverOrOdd(userNumber);
+// }
+
+// const num1 = +prompt("Number1 :");
+// const num2 = +prompt("Number2 :");
+// const num3 = +prompt("Number3 :");
+
+// function calculateAverage(number1, number2, number3) {
+//   let sum = num1 + num2 + num3;
+//   let average = sum / 3;
+
+//   alert("Average :" + average);
+// }
+// if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+//   alert("Just Number :)");
+// } else {
+//   calculateAverage(num1, num2, num3);
+// }
+
+function sum(num1, num2) {
+  const resault = num1 + num2;
+  console.log("num1 + num2 = " + resault);
 }
 
-if (isNaN(num1) || isNaN(num2)) {
-  alert("Just Number please :)")
-}
-
-sumTwoNumbers(num1, num2);
+sum(13);
