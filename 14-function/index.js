@@ -45,30 +45,30 @@ function dublicate(number) {
 dublicate(3); // Call with 3 / Aufruf mit 3
 
 // Function declaration
-function sayMyName(name) {
-  console.log(`Your name is ${name} - 1`);
-}
+// function sayMyName(name) {
+//   console.log(`Your name is ${name} - 1`);
+// }
 
 // Function Expression
-const sayMyName2 = function (name) {
-  console.log(`Your name is ${name} - 2`);
-};
+// const sayMyName2 = function (name) {
+//   console.log(`Your name is ${name} - 2`);
+// };
 
-sayMyName("kamy");
-sayMyName2("kamy");
+// sayMyName("kamy");
+// sayMyName2("kamy");
 
 // Anonymous Function
 // function () {
 
 // }
 
-(function () {
-  console.log("I am IIFE");
-})();
+// (function () {
+//   console.log("I am IIFE");
+// })();
 
-(function (name) {
-  console.log(`I am ${name}`);
-})("IIFE");
+// (function (name) {
+//   console.log(`I am ${name}`);
+// })("IIFE");
 
 // Arrow Function | ES6
 
@@ -79,25 +79,28 @@ sayMyName2("kamy");
 // const sum = (num1, num2) => {
 //   return num1 + num2;
 // };
-const sum = (num1, num2) => num1 + num2;
+// const sum = (num1, num2) => num1 + num2;
 
-const resault = sum(1, 2);
-console.log(resault);
+// const resault = sum(1, 2);
+// console.log(resault);
 
 // EX 1
-// const num1 = +prompt("Number 1 :");
-// const num2 = +prompt("Number 2 :");
-// function sumTwoNumbers(number1, number2) {
-//   const sum = number1 + number2;
 
-//   alert("Number1 + Number2 = " + sum);
-// }
+const num1 = +prompt("Number 1 :");
+const num2 = +prompt("Number 2 :");
 
-// if (isNaN(num1) || isNaN(num2)) {
-//   alert("Just Number please :)");
-// } else {
-//   sumTwoNumbers(num1, num2);
-// }
+function sumTwoNumbers(number1, number2) {
+  const sum = number1 + number2;
+
+  return sum;
+}
+
+if (isNaN(num1) || isNaN(num2)) {
+  alert("Just Number please :)");
+} else {
+  const sumNumbers = sumTwoNumbers(num1, num2);
+  console.log("num1 + num2 = " + sumNumbers);
+}
 
 // EX 2
 // const userNumber = +prompt("Number : ");
@@ -132,9 +135,49 @@ console.log(resault);
 //   calculateAverage(num1, num2, num3);
 // }
 
-function sum(num1, num2) {
-  const resault = num1 + num2;
-  console.log("num1 + num2 = " + resault);
-}
+// Default Value
 
-sum(13);
+// function sum2(num1 = 0, num2 = 0) {
+// console.log(num1, num2);
+// console.log(typeof num1, typeof num2, typeof typeof num2);
+
+// Way 1
+// if (typeof num2 === "undefined") {
+//   num2 = 0;
+// }
+//   const resault = num1 + num2;
+//   console.log("num1 + num2 = " + resault);
+// }
+
+// sum2(13);
+
+// const test = prompt("Test msg");
+// console.log(test);
+// console.log(typeof test);
+
+// const number3 = Math.floor(13.13);
+// console.log(number3);
+
+// function register(username, password) {
+// Register logic
+
+//   return true;
+// }
+
+// function backNmae(name) {
+//   return "Hallo" + name + "!";
+// }
+// const msg = backNmae("kamy");
+// console.log(msg);
+
+// function test () {
+//   let num1 = 13;
+//   let username = "kamy";
+//   let userAge = 24;
+
+//   // codes
+//   //codes
+//   // codes
+
+//   return;
+// }
