@@ -18,12 +18,12 @@
 //   console.log("Hallo !");
 // }
 
-// const text = "ich MAG javascript und css";
+const text = "ich MAG javascript und css";
 // console.log(text[5]);
 // console.log(text.charAt(2)); // low
 // console.log(text.charCodeAt()); // low
 // console.log(text  + " und React");
-// const finalText = console.log(text.concat(" und React", " und Next"));
+const finalText = console.log(text.concat(" und React", " und Next"));
 // console.log(text);
 
 // const newText = "               ich mag Js  ";
@@ -56,5 +56,15 @@
 //   console.log("yesyesyes");
 // }
 
-
 // slice - substr - substring
+// console.log(text.slice(8,18));
+
+const url = prompt("Enter Your URL : ").trim();
+console.log(url);
+const checkUrl = url.slice(0, 5);
+
+if (checkUrl.includes("https")) {
+  console.log("Done ");
+} else {
+  console.log("ERORR !!!!!!!");
+}
