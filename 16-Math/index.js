@@ -60,4 +60,27 @@ console.log(Math.floor(Math.random() * 200));
 // EN: Generates a random integer between 0 and 199 by multiplying a random number by 200 and rounding down
 // DE: Erzeugt eine Zufallszahl zwischen 0 und 199, indem eine Zufallszahl mit 200 multipliziert und abgerundet wird
 
+// EX CaptCha
+// EX CaptCha
 
+let captcha = Math.floor(Math.random() * 100000);
+// EN: Generates a random captcha number between 0 and 99999 by multiplying Math.random() by 100000 and rounding down
+// DE: Erzeugt eine zufällige Captcha-Nummer zwischen 0 und 99999, indem eine Zufallszahl mit 100000 multipliziert und abgerundet wird
+
+console.log(captcha);
+// EN: Displays the generated captcha in the console
+// DE: Gibt die generierte Captcha-Nummer in der Konsole aus
+
+const userCaptcha = +prompt("Enter the Captcha please! " + captcha);
+// EN: Prompts the user to enter the displayed captcha, converting the response string to a number
+// DE: Fordert den Benutzer auf, die angezeigte Captcha-Nummer einzugeben und wandelt die Eingabe in eine Zahl um
+
+if (userCaptcha === captcha) {
+  console.log("Perfekt");
+// EN: If the entered captcha matches the generated one, logs "Perfekt"
+// DE: Wenn die eingegebene Captcha-Nummer mit der generierten übereinstimmt, wird "Perfekt" ausgegeben
+} else {
+  console.log("Falsch");
+// EN: If the entered captcha does not match, logs "Falsch"
+// DE: Wenn die eingegebene Captcha-Nummer nicht übereinstimmt, wird "Falsch" ausgegeben
+}
