@@ -30,7 +30,4 @@ for (i = 100; i >= 0; i = i - 2) {
   console.log(i);
 }
 // console.log(i); // -2
-
-// bis spater :)
-
-// neues updated
+// update new 
