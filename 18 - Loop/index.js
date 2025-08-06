@@ -30,4 +30,21 @@ for (i = 100; i >= 0; i = i - 2) {
   console.log(i);
 }
 // console.log(i); // -2
-// update new 
+// update new
+
+for (let i = 0; i <= 25; i++) {
+  console.log("i = " + i);
+}
+
+let userName2 = "kamycoding";
+console.log(userName2[3]);
+
+for (let i = 0; i < userName2.length; i++) {
+  console.log(userName2[i]);
+}
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log("Zoj : " + i);
+  }
+}
