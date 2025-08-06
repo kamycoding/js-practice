@@ -32,6 +32,7 @@ for (i = 100; i >= 0; i = i - 2) {
 // console.log(i); // -2
 // update new
 
+// Review
 for (let i = 0; i <= 25; i++) {
   console.log("i = " + i);
 }
@@ -45,6 +46,26 @@ for (let i = 0; i < userName2.length; i++) {
 
 for (let i = 0; i <= 100; i++) {
   if (i % 2 === 0) {
-    console.log("Zoj : " + i);
+    console.log("Num : " + i);
   }
 }
+let currentPrice;
+let sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+  let currentPrice = +prompt("number of " + i + " product.");
+
+  sum = sum + currentPrice;
+}
+
+console.log(sum);
+
+let userNum;
+let sum2 = 0;
+
+for (let i = 0; i <= 5; i++) {
+  userNum = +prompt("number : " + (i + 1));
+  sum += userNum;
+}
+let average = sum / 5;
+console.log("average = " + average);
