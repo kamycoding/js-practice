@@ -49,23 +49,43 @@ for (let i = 0; i <= 100; i++) {
     console.log("Num : " + i);
   }
 }
-let currentPrice;
-let sum = 0;
+// let currentPrice;
+// let sum = 0;
 
-for (let i = 1; i <= 5; i++) {
-  let currentPrice = +prompt("number of " + i + " product.");
+// for (let i = 1; i <= 5; i++) {
+//   let currentPrice = +prompt("number of " + i + " product.");
 
-  sum = sum + currentPrice;
+//   sum = sum + currentPrice;
+// }
+
+// console.log(sum);
+
+// let userNum;
+// let sum2 = 0;
+
+// for (let i = 0; i <= 5; i++) {
+//   userNum = +prompt("number : " + (i + 1));
+//   sum += userNum;
+// }
+// let average = sum / 5;
+// console.log("average = " + average);
+
+let userNummer = +prompt("enter your Nummber :");
+let count = 0;
+
+if (isNaN(userNummer)) {
+  alert("just Number!");
+} else {
+  if (userNummer === 0) {
+    count = 1;
+  } else {
+    for (let i = 0; userNummer / 10 !== 0; i++) {
+      count++;
+
+      userNummer = Math.floor(userNummer / 10);
+    }
+  }
+  alert("count = " + count)
 }
 
-console.log(sum);
 
-let userNum;
-let sum2 = 0;
-
-for (let i = 0; i <= 5; i++) {
-  userNum = +prompt("number : " + (i + 1));
-  sum += userNum;
-}
-let average = sum / 5;
-console.log("average = " + average);
