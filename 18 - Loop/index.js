@@ -70,22 +70,54 @@ for (let i = 0; i <= 100; i++) {
 // let average = sum / 5;
 // console.log("average = " + average);
 
-let userNummer = +prompt("enter your Nummber :");
+// let userNummer = +prompt("enter your Nummber :");
+// let count = 0;
+
+// if (isNaN(userNummer)) {
+//   alert("just Number!");
+// } else {
+//   if (userNummer === 0) {
+//     count = 1;
+//   } else {
+//     for (let i = 0; userNummer / 10 !== 0; i++) {
+//       count++;
+
+//       userNummer = Math.floor(userNummer / 10);
+//     }
+//   }
+//   alert("count = " + count)
+// }
+
+// let userNummer = prompt("Enter your Nummer : ");
+// let count = 0;
+
+// if (isNaN(userNummer)) {
+//   alert("just nummer");
+// } else {
+//   if (userNummer === 0) {
+//     count = 1;
+//   } else {
+//     for (let i = 0; userNummer / 10 !== 0; i = i + 1) {
+//       count++;
+
+//       userNummer = Math.floor(userNummer / 10);
+//     }
+//   }
+// }
+
+let userNummer2 = prompt("num :");
 let count = 0;
 
-if (isNaN(userNummer)) {
-  alert("just Number!");
+if (isNaN(userNummer2)) {
+  alert("just num");
 } else {
-  if (userNummer === 0) {
+  if (userNummer2 === 0) {
     count = 1;
   } else {
-    for (let i = 0; userNummer / 10 !== 0; i++) {
+    for (let i = 0; userNummer2 / 10 !== 0; i = 1 + i) {
       count++;
 
-      userNummer = Math.floor(userNummer / 10);
+      userNummer2 = Math.floor(userNummer2 / 10 === 0);
     }
   }
-  alert("count = " + count)
 }
-
-
