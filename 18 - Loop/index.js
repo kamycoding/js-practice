@@ -117,7 +117,25 @@ if (isNaN(userNummer2)) {
     for (let i = 0; userNummer2 / 10 !== 0; i = 1 + i) {
       count++;
 
-      userNummer2 = Math.floor(userNummer2 / 10 === 0);
+      userNummer2 = Math.floor(userNummer2 / 10);
     }
   }
+  alert(count);
+}
+
+let enterNummber = prompt("nummer !");
+let sum = 0;
+
+if (isNaN(enterNummber)) {
+  alert("just nummer");
+} else {
+  if (enterNummber === 0) {
+    sum = 0;
+  } else {
+    for (let i = 0; enterNummber / 10 !== 0; i = i + 1) {
+      sum = sum + (enterNummber % 10);
+      enterNummber = Math.floor(enterNummber / 10)
+    }
+  }
+  alert(sum);
 }
