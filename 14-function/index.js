@@ -86,21 +86,21 @@ dublicate(3); // Call with 3 / Aufruf mit 3
 
 // EX 1
 
-const num1 = +prompt("Number 1 :");
-const num2 = +prompt("Number 2 :");
+// const num1 = +prompt("Number 1 :");
+// const num2 = +prompt("Number 2 :");
 
-function sumTwoNumbers(number1, number2) {
-  const sum = number1 + number2;
+// function sumTwoNumbers(number1, number2) {
+//   const sum = number1 + number2;
 
-  return sum;
-}
+//   return sum;
+// }
 
-if (isNaN(num1) || isNaN(num2)) {
-  alert("Just Number please :)");
-} else {
-  const sumNumbers = sumTwoNumbers(num1, num2);
-  console.log("num1 + num2 = " + sumNumbers);
-}
+// if (isNaN(num1) || isNaN(num2)) {
+//   alert("Just Number please :)");
+// } else {
+//   const sumNumbers = sumTwoNumbers(num1, num2);
+//   console.log("num1 + num2 = " + sumNumbers);
+// }
 
 // EX 2
 // const userNumber = +prompt("Number : ");
@@ -181,3 +181,10 @@ if (isNaN(num1) || isNaN(num2)) {
 
 //   return;
 // }
+
+function sayHello(name) {
+  const message = "سلام " + name + "!";
+  return message;
+}
+const result = sayHello("علی");
+console.log(result);
