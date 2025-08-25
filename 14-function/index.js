@@ -181,10 +181,15 @@ dublicate(3); // Call with 3 / Aufruf mit 3
 
 //   return;
 // }
-
-function sayHello(name) {
-  const message = "سلام " + name + "!";
-  return message;
+// Review
+function showMessage() {
+  console.log("Hallo");
 }
-const result = sayHello("علی");
-console.log(result);
+
+showMessage();
+
+// const sum = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+// const resault = sum(13 + 3);
