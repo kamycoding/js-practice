@@ -65,6 +65,21 @@
 
 // forEach
 
-const numbers = [2, 4, 5, 65, 6, 7, 8, 56];
+// const numbers = [2, 4, 5, 65, 6, 7, 8, 56];
+// const newNumber = [];
 
-numbers.forEach((i) => console.log(i));
+// numbers.forEach((number) => {
+//   newNumber.push(number * 2);
+// });
+// console.log(newNumber);
+
+// map
+
+const numbers = [21, 4, 6, 8, 10];
+
+const newNumber = numbers.map((number) => {
+  const resault = number * 3;
+  return resault;
+});
+
+console.log(newNumber);
