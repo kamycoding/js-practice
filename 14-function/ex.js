@@ -75,8 +75,21 @@
 
 // map
 
-const numbers = [21, 4, 6, 8, 10];
+// const numbers = [21, 4, 6, 8, 10];
 
-const newNumber = numbers.map((number) => number * 3);
+// const newNumber = numbers.map((number) => number * 3);
 
-console.log(newNumber);
+// console.log(newNumber);
+// console.log(numbers);
+
+// let sum = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log("sum : ", sum(8, 2));
+
+// let doubleNumber = (num) => num * 2;
+
+// console.log(doubleNumber(3));
+
+let makeUser = (id, name) => ({ id: id, name: name });
+console.log("user", makeUser(12, "kamy"));
