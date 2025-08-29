@@ -77,9 +77,6 @@
 
 const numbers = [21, 4, 6, 8, 10];
 
-const newNumber = numbers.map((number) => {
-  const resault = number * 3;
-  return resault;
-});
+const newNumber = numbers.map((number) => number * 3);
 
 console.log(newNumber);
