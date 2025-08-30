@@ -91,5 +91,20 @@
 
 // console.log(doubleNumber(3));
 
-let makeUser = (id, name) => ({ id: id, name: name });
-console.log("user", makeUser(12, "kamy"));
+// let makeUser = (id, name) => ({ id: id, name: name });
+// console.log("user", makeUser(12, "kamy"));
+
+// find
+// const number = [2, 4, 5, 6, 8, 9];
+
+// const resault = number.find((number) => {
+//   console.log(number);
+//   const isEqual = number === 5;
+//   console.log(isEqual);
+// });
+
+// filter
+const number = [2, 4, 6, 8, 5, 3, 5];
+
+const resault = number.filter((number) => number === 5);
+console.log(resault);
