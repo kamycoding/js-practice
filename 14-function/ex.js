@@ -117,10 +117,23 @@
 
 // reduce
 
-const numbers = [2, 4, 6, 8, 10];
+// const numbers = [2, 4, 6, 8, 10];
 
-const resault = numbers.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  0
-);
+// const resault = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+// console.log(resault);
+
+// every - some ===> true or false
+
+const data = [2, 4, 6, 8];
+
+// const resault = data.every((item) => {
+//   const isTrue = typeof item === "number";
+//   return isTrue;
+// });
+// console.log(resault);
+
+const resault = data.every((item) => typeof item === "number");
 console.log(resault);
