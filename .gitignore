@@ -1,4 +1,9 @@
-CLAUDE.local.md
+# Development files
+.dev-config.md
+.project-notes.md
+.ai-ignore
+
+# Dependencies
 node_modules/
 package-lock.json
 package.json
