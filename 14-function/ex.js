@@ -104,7 +104,23 @@
 // });
 
 // filter
-const number = [2, 4, 6, 8, 5, 3, 5];
+// const number = [2, 4, 6, 8, 5, 3, 5];
 
-const resault = number.filter((number) => number === 5);
+// const resault = number.filter((number) => number === 5);
+// console.log(resault);
+
+// const numbers = [2, 3, 4, 5, 6, 7, 8, 9];
+// let sum2 = 0;
+// const sum = numbers.forEach((number) => (sum2 += number));
+
+// console.log(sum2);
+
+// reduce
+
+const numbers = [2, 4, 6, 8, 10];
+
+const resault = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
 console.log(resault);
