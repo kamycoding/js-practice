@@ -127,7 +127,7 @@
 
 // every - some ===> true or false
 
-const data = [2, 4, 6, 8];
+const data = [2, "4", 6, 8];
 
 // const resault = data.every((item) => {
 //   const isTrue = typeof item === "number";
@@ -135,5 +135,8 @@ const data = [2, 4, 6, 8];
 // });
 // console.log(resault);
 
-const resault = data.every((item) => typeof item === "number");
-console.log(resault);
+// const resault = data.every((item) => typeof item === "number");
+// console.log(resault); ===> false
+
+// const resault = data.some((item) => typeof item === "number");
+// console.log(resault);  ===> true
