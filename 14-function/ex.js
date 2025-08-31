@@ -144,59 +144,59 @@
 // Challenge 1. Find customers with age>60 and age<10
 // Challenge 2. Build customer data with title and full name
 
-let customers = [
-  {
-    id: 1,
-    f_name: "Abby",
-    l_name: "Thomas",
-    gender: "M",
-    married: true,
-    age: 32,
-    expense: 500,
-    purchased: ["Shampoo", "Toys", "Book"],
-  },
-  {
-    id: 2,
-    f_name: "Jerry",
-    l_name: "Tom",
-    gender: "M",
-    married: true,
-    age: 64,
-    expense: 100,
-    purchased: ["Stick", "Blade"],
-  },
-  {
-    id: 3,
-    f_name: "Dianna",
-    l_name: "Cherry",
-    gender: "F",
-    married: true,
-    age: 22,
-    expense: 1500,
-    purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
-  },
-  {
-    id: 4,
-    f_name: "Dev",
-    l_name: "Currian",
-    gender: "M",
-    married: true,
-    age: 82,
-    expense: 90,
-    purchased: ["Book"],
-  },
-  {
-    id: 5,
-    f_name: "Maria",
-    l_name: "Gomes",
-    gender: "F",
-    married: false,
-    age: 7,
-    expense: 300,
-    purchased: ["Toys"],
-  },
-];
-console.log("ok");
+// let customers = [
+//   {
+//     id: 1,
+//     f_name: "Abby",
+//     l_name: "Thomas",
+//     gender: "M",
+//     married: true,
+//     age: 32,
+//     expense: 500,
+//     purchased: ["Shampoo", "Toys", "Book"],
+//   },
+//   {
+//     id: 2,
+//     f_name: "Jerry",
+//     l_name: "Tom",
+//     gender: "M",
+//     married: true,
+//     age: 64,
+//     expense: 100,
+//     purchased: ["Stick", "Blade"],
+//   },
+//   {
+//     id: 3,
+//     f_name: "Dianna",
+//     l_name: "Cherry",
+//     gender: "F",
+//     married: true,
+//     age: 22,
+//     expense: 1500,
+//     purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+//   },
+//   {
+//     id: 4,
+//     f_name: "Dev",
+//     l_name: "Currian",
+//     gender: "M",
+//     married: true,
+//     age: 82,
+//     expense: 90,
+//     purchased: ["Book"],
+//   },
+//   {
+//     id: 5,
+//     f_name: "Maria",
+//     l_name: "Gomes",
+//     gender: "F",
+//     married: false,
+//     age: 7,
+//     expense: 300,
+//     purchased: ["Toys"],
+//   },
+// ];
+// console.log("ok");
 
 // const result = customers.filter(
 //   (customer) => customer.age > 60 || customer.age < 10
@@ -204,17 +204,101 @@ console.log("ok");
 
 // console.log(result);
 
-const customerWithTitle = customers.map((customer) => {
-  let title = "";
-  if (customer.gender === "M") {
-    title = "Mr.";
-  } else if (customer.gender === "F" && customer.married) {
-    title = "Mrs.";
-  } else {
-    title = "Miss.";
-  }
-  customer.fullName = `${title} ${customer.f_name} ${customer.l_name}`;
-  return customer;
-});
+// const customerWithTitle = customers.map((customer) => {
+//   let title = "";
+//   if (customer.gender === "M") {
+//     title = "Mr.";
+//   } else if (customer.gender === "F" && customer.married) {
+//     title = "Mrs.";
+//   } else {
+//     title = "Miss.";
+//   }
+//   customer.fullName = `${title} ${customer.f_name} ${customer.l_name}`;
+//   return customer;
+// });
 
-console.log(customerWithTitle);
+// console.log(customerWithTitle);
+
+// let users = [
+//   { id: 1, name: "kamy" },
+//   { id: 2, name: "sog" },
+//   { id: 3, name: "shadi" },
+// ];
+
+// console.log(users[1]);
+// console.log(users[1].name);
+// console.log(users[1]["name"]);
+// console.log(users.length);
+
+// let newUser = {
+//   id: users.length + 1,
+//   name: "tania",
+// };
+
+// users.push(newUser);
+// console.log(users);
+
+// EX Reg
+
+let users = [
+  { id: 1, name: "kamy", age: 27 },
+  { id: 2, name: "sog", age: 25 },
+  { id: 3, name: "shadi", age: 5 },
+];
+
+function validateEmail(email) {
+  if (email.length < 5) return false;
+  if (!email.includes("@") || !email.includes(".")) return false;
+  if (email.indexOf("@") >= email.indexOf(".")) return false;
+  return true;
+}
+
+function validateName(name) {
+  if (name.length < 3 || name.length > 10) {
+    return false;
+  }
+  return true;
+}
+
+function validateAge(age) {
+  if (age < 18) {
+    return false;
+  }
+  return true;
+}
+function signUp() {
+  let newName = prompt("Enter Your Name :");
+  if (!validateName(newName)) {
+    alert("name is between 3 and 10");
+    return;
+  }
+
+  let newFamily = prompt("Enter your Family :");
+  if (!validateName(newFamily)) {
+    alert("family is between 3 and 10");
+    return;
+  }
+
+  let newAge = Number(prompt("Enter your Age :"));
+  if (!validateAge(newAge)) {
+    alert("Age must be over 18.");
+    return;
+  }
+
+  let newEmail = prompt("Enter your Email :");
+  if (!validateEmail(newEmail)) {
+    alert("Format Email is not correct");
+    return;
+  }
+
+  let newUser = {
+    id: users.length + 1,
+    name: newName,
+    family: newFamily,
+    age: newAge,
+    email: newEmail,
+  };
+  users.push(newUser);
+}
+signUp();
+console.log(users);
