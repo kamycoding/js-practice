@@ -70,6 +70,23 @@ if (userProductTitle.length > 0) {
     return product.title === userProductTitle && product.qty > 0;
   });
   if (isInShop === true) {
+    let newBasket = {
+      id: basket.length + 1,
+      title: userProductTitle,
+    };
+    products.forEach(function (product) {
+      if (product.title === userProductTitle) {
+        newBasket.price = product.price;
+      }
+    });
+    basket.push(newBasket);
+    console.log("Basket --> ", basket);
+
+    let totalPrice = 0;
+    basket.forEach(function (product) {
+      totalPrice += product.price;
+    });
+    alert("Total Price --> " + totalPrice);
   } else {
     alert("No QTY :(");
   }
