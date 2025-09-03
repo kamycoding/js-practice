@@ -226,9 +226,15 @@ const students = [
     score: 65,
   },
 ];
+//* find Ex
+// const mainStudent = students.find(function (student) {
+// return student.name === "sog" || student.score > 50; //* item 2 return
+//   return student.name === "sog" && student.score > 80;
+// });
+//* findIndex
 
-const mainStudent = students.find(function (student) {
-  // return student.name === "sog" || student.score > 50; //* item 2 return
-  return student.name === "sog" && student.score > 80;
+const mainStudent = students.findIndex(function (student) {
+  return student.name === "kamy" && student.age > 18;
 });
+
 console.log(mainStudent);
