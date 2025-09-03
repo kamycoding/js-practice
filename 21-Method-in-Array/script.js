@@ -142,7 +142,7 @@ const basket2 = [
 // }
 
 //* every
-const users = ["kamy", " sog", "tani", "shadi"];
+// const users = ["kamy", " sog", "tani", "shadi"];
 const scores = [25, 13, 12, 29, 96, 102];
 // const students = [
 //   {
@@ -237,4 +237,4 @@ const mainStudent = students.findIndex(function (student) {
   return student.name === "kamy" && student.age > 18;
 });
 
-console.log(mainStudent);
+// console.log(mainStudent);
