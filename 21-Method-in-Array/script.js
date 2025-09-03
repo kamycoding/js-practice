@@ -144,6 +144,56 @@ const basket2 = [
 //* every
 const users = ["kamy", " sog", "tani", "shadi"];
 const scores = [25, 13, 12, 29, 96, 102];
+// const students = [
+//   {
+//     id: 1,
+//     name: "kamy",
+//     age: 27,
+//     score: 13,
+//   },
+//   {
+//     id: 2,
+//     name: "shadi",
+//     age: 5,
+//     score: 52,
+//   },
+//   {
+//     id: 3,
+//     name: "sog",
+//     age: 26,
+//     score: 99,
+//   },
+//   {
+//     id: 4,
+//     name: "tania",
+//     age: 6,
+//     score: 34,
+//   },
+//   {
+//     id: 5,
+//     name: "gholam",
+//     age: 45,
+//     score: 65,
+//   },
+// ];
+
+// const isAll = scores.every(function (score) {
+//   return score < 10;
+// });
+// console.log("isAll :", isAll);
+
+//* EX EVERY
+// const isValid = students.every(function (student) {
+//   console.log(student);
+//   return student.age > 18;
+// });
+// if (isValid === true) {
+//   alert("Done");
+// } else {
+//   alert("No!");
+// }
+
+//* Find - FindIndex
 const students = [
   {
     id: 1,
@@ -177,17 +227,8 @@ const students = [
   },
 ];
 
-const isAll = scores.every(function (score) {
-  return score < 10;
+const mainStudent = students.find(function (student) {
+  // return student.name === "sog" || student.score > 50; //* item 2 return
+  return student.name === "sog" && student.score > 80;
 });
-console.log("isAll :", isAll);
-
-const isValid = students.every(function (student) {
-  console.log(student);
-  return student.age > 18;
-});
-if (isValid === true) {
-  alert("Done");
-} else {
-  alert("No!");
-}
+console.log(mainStudent);
