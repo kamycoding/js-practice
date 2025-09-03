@@ -186,4 +186,8 @@ const isValid = students.every(function (student) {
   console.log(student);
   return student.age > 18;
 });
-console.log(isValid);
+if (isValid === true) {
+  alert("Done");
+} else {
+  alert("No!");
+}
