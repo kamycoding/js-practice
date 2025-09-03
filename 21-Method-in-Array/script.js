@@ -112,32 +112,78 @@ const basket2 = [
   { id: 6, title: "headphone", price: 99, qty: 13 },
 ];
 
-const userProductTitle2 = prompt("Enter Your Product Title :");
+// const userProductTitle2 = prompt("Enter Your Product Title :");
 
-if (userProductTitle2.length > 0) {
-  const isInShop = products2.some(function (product) {
-    return product.title === userProductTitle2 && products.qty > 0;
-  });
-  if (isInShop === true) {
-    let newBasket = {
-      id: basket2 + 1,
-      title: userProductTitle2,
-    };
-    products2.forEach(function (product) {
-      if (product.title === userProductTitle2) {
-        products.price = newBasket.price;
-      }
-    });
-    basket2.push(newBasket);
-    console.log(newBasket);
-    let totalPrice = 0;
-    basket2.forEach(function (product) {
-      totalPrice += product.price;
-      alert("Total price --> " + totalPrice);
-    });
-  } else {
-    alert("No QTY :(");
-  }
-} else {
-  alert("Write title product!");
-}
+// if (userProductTitle2.length > 0) {
+//   const isInShop = products2.some(function (product) {
+//     return product.title === userProductTitle2 && product.qty > 0;
+//   });
+//   if (isInShop === true) {
+//     let newBasket = {
+//       id: basket2.length + 1,
+//       title: userProductTitle2,
+//     };
+//     products2.forEach(function (product) {
+//       if (product.title === userProductTitle2) {
+//         newBasket.price = product.price;
+//       }
+//     });
+//     basket2.push(newBasket);
+//     let totalPrice = 0;
+//     basket2.forEach(function (product) {
+//       totalPrice += product.price;
+//     });
+//     alert("Your basket -->" + basket2 + "Total price --> " + totalPrice);
+//   } else {
+//     alert("No QTY :(");
+//   }
+// } else {
+//   alert("Write title product!");
+// }
+
+//* every
+const users = ["kamy", " sog", "tani", "shadi"];
+const scores = [25, 13, 12, 29, 96, 102];
+const students = [
+  {
+    id: 1,
+    name: "kamy",
+    age: 27,
+    score: 13,
+  },
+  {
+    id: 2,
+    name: "shadi",
+    age: 5,
+    score: 52,
+  },
+  {
+    id: 3,
+    name: "sog",
+    age: 26,
+    score: 99,
+  },
+  {
+    id: 4,
+    name: "tania",
+    age: 6,
+    score: 34,
+  },
+  {
+    id: 5,
+    name: "gholam",
+    age: 45,
+    score: 65,
+  },
+];
+
+const isAll = scores.every(function (score) {
+  return score < 10;
+});
+console.log("isAll :", isAll);
+
+const isValid = students.every(function (student) {
+  console.log(student);
+  return student.age > 18;
+});
+console.log(isValid);
