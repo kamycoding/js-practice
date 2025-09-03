@@ -236,5 +236,3 @@ const students = [
 const mainStudent = students.findIndex(function (student) {
   return student.name === "kamy" && student.age > 18;
 });
-
-// console.log(mainStudent);
