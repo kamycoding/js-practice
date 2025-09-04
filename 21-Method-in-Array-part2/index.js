@@ -43,7 +43,7 @@ const users = ["kamy", "sog", " shadi", "tania"];
 
 const products = [
   { id: 1, title: "pen", price: 12 },
-  { id: 2, title: "pencile", price: 4 },
+  { id: 2, title: "pencil", price: 4 },
   { id: 3, title: "milk", price: 22 },
   { id: 4, title: "headphone", price: 200 },
   { id: 5, title: "water", price: 8 },
@@ -104,9 +104,9 @@ if (isNaN(userChoice)) {
           title: mainProduct.title,
           price: mainProduct.price,
         };
+        basket.push(newBasketUser);
+        console.log("Final Basket --> ", basket);
       }
-      basket.push(newBasketUser);
-      console.log("Final Basket --> ", basket);
     }
   }
 }
