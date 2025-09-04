@@ -83,8 +83,30 @@ if (isNaN(userChoice)) {
       } else {
         basket.splice(productIndex, 1);
         alert("The desired product was successfully deleted.");
-        console.log(basket);
+        console.log("Basket --> ", basket);
       }
+    }
+  } else {
+    const userProductTitle = prompt(
+      "Write the name of the product you want to Add."
+    );
+    if (userProductTitle.trim().length === 0) {
+      alert("Just write the name of the product");
+    } else {
+      const mainProduct = products.find(function (product) {
+        return product.title === userProductTitle;
+      });
+      if (mainProduct === undefined) {
+        alert("No such product was found in the basket.");
+      } else {
+        let newBasketUser = {
+          id: basket.length + 1,
+          title: mainProduct.title,
+          price: mainProduct.price,
+        };
+      }
+      basket.push(newBasketUser);
+      console.log("Final Basket --> ", basket);
     }
   }
 }
