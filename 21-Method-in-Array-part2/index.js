@@ -65,5 +65,8 @@ if (isNaN(userChoice)) {
 } else if (userChoice !== 1 && userChoice !== 2) {
   alert("Please type just 1 or 2 !");
 } else {
-  //codes
+  //! Remove From Basket
+  if (userChoice === 1) {
+    prompt("Please type your product :");
+  }
 }
