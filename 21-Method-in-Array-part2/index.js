@@ -32,3 +32,7 @@ const students = [
     score: 65,
   },
 ];
+
+const users = ["kamy", "sog", " shadi", "tania"];
+
+users.splice(start); // 2 Param ==> Remove ITEM
