@@ -67,6 +67,11 @@ if (isNaN(userChoice)) {
 } else {
   //! Remove From Basket
   if (userChoice === 1) {
-    prompt("Please type your product :");
+    const userProductTitle = prompt("Please type your product :");
+    if (userProductTitle.trim().length === 0) {
+      alert("Just write the name of the product");
+    } else {
+      //some
+    }
   }
 }
