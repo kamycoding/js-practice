@@ -36,8 +36,8 @@ const students = [
 const users = ["kamy", "sog", " shadi", "tania"];
 
 //*2 Param ==> Remove ITEM +3 Param ==> add ITEM
-users.splice(1, 2);
-console.log(users);
+// users.splice(1, 2);
+// console.log(users);
 
 //* important EX ->
 
@@ -59,8 +59,11 @@ const basket = [
 const userChoice = +prompt(
   "Choose Number :" + "\n1. Delet Item" + "\n2. Add Item"
 );
-if (isNaN(userChoice) || userChoice !== 1 || userChoice !== 2) {
-  alert("Please Type Just 1 Or 2");
+console.log(userChoice);
+if (isNaN(userChoice)) {
+  alert("Please enter a number!");
+} else if (userChoice !== 1 && userChoice !== 2) {
+  alert("Please type just 1 or 2 !");
 } else {
   //codes
 }
