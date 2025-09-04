@@ -67,11 +67,24 @@ if (isNaN(userChoice)) {
 } else {
   //! Remove From Basket
   if (userChoice === 1) {
-    const userProductTitle = prompt("Please type your product :");
+    const userProductTitle = prompt(
+      "Write the name of the product you want to delete."
+    );
     if (userProductTitle.trim().length === 0) {
       alert("Just write the name of the product");
     } else {
-      //some
+      //some --> findIndex --> splice
+      //!findIndex --> splice
+      const productIndex = basket.findIndex(function (product) {
+        return product.title === userProductTitle;
+      });
+      if (productIndex === -1) {
+        alert("No such product was found in the basket.");
+      } else {
+        basket.splice(productIndex, 1);
+        alert("The desired product was successfully deleted.");
+        console.log(basket);
+      }
     }
   }
 }
