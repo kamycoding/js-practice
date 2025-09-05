@@ -59,9 +59,8 @@ const basket = [
 const userChoice = +prompt(
   "Choose Number :" + "\n1. Delet Item" + "\n2. Add Item"
 );
-console.log(userChoice);
 if (isNaN(userChoice)) {
-  alert("Please enter a number!");
+  alert("Please Write a Number !");
 } else if (userChoice !== 1 && userChoice !== 2) {
   alert("Please type just 1 or 2 !");
 } else {
@@ -73,8 +72,7 @@ if (isNaN(userChoice)) {
     if (userProductTitle.trim().length === 0) {
       alert("Just write the name of the product");
     } else {
-      //some --> findIndex --> splice
-      //!findIndex --> splice
+      //! findIndex --> splice
       const productIndex = basket.findIndex(function (product) {
         return product.title === userProductTitle;
       });
@@ -86,27 +84,60 @@ if (isNaN(userChoice)) {
         console.log("Basket --> ", basket);
       }
     }
-  } else {
-    const userProductTitle = prompt(
-      "Write the name of the product you want to Add."
-    );
-    if (userProductTitle.trim().length === 0) {
-      alert("Just write the name of the product");
-    } else {
-      const mainProduct = products.find(function (product) {
-        return product.title === userProductTitle;
-      });
-      if (mainProduct === undefined) {
-        alert("No such product was found in the basket.");
-      } else {
-        let newBasketUser = {
-          id: basket.length + 1,
-          title: mainProduct.title,
-          price: mainProduct.price,
-        };
-        basket.push(newBasketUser);
-        console.log("Final Basket --> ", basket);
-      }
-    }
   }
 }
+
+// const userChoice = +prompt(
+//   "Choose Number :" + "\n1. Delet Item" + "\n2. Add Item"
+// );
+// console.log(userChoice);
+// if (isNaN(userChoice)) {
+//   alert("Please enter a number!");
+// } else if (userChoice !== 1 && userChoice !== 2) {
+//   alert("Please type just 1 or 2 !");
+// } else {
+//   //! Remove From Basket
+//   if (userChoice === 1) {
+//     const userProductTitle = prompt(
+//       "Write the name of the product you want to delete."
+//     );
+//     if (userProductTitle.trim().length === 0) {
+//       alert("Just write the name of the product");
+//     } else {
+//       //some --> findIndex --> splice
+//       //!findIndex --> splice
+//       const productIndex = basket.findIndex(function (product) {
+//         return product.title === userProductTitle;
+//       });
+//       if (productIndex === -1) {
+//         alert("No such product was found in the basket.");
+//       } else {
+//         basket.splice(productIndex, 1);
+//         alert("The desired product was successfully deleted.");
+//         console.log("Basket --> ", basket);
+//       }
+//     }
+//   } else {
+//     const userProductTitle = prompt(
+//       "Write the name of the product you want to Add."
+//     );
+//     if (userProductTitle.trim().length === 0) {
+//       alert("Just write the name of the product");
+//     } else {
+//       const mainProduct = products.find(function (product) {
+//         return product.title === userProductTitle;
+//       });
+//       if (mainProduct === undefined) {
+//         alert("No such product was found in the basket.");
+//       } else {
+//         let newBasketUser = {
+//           id: basket.length + 1,
+//           title: mainProduct.title,
+//           price: mainProduct.price,
+//         };
+//         basket.push(newBasketUser);
+//         console.log("Final Basket --> ", basket);
+//       }
+//     }
+//   }
+// }
