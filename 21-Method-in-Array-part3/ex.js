@@ -14,5 +14,16 @@ if (userSearch.trim().length === 0) {
   const searchResult = articles.filter(function (article) {
     return article.includes(userSearch);
   });
-  console.log(searchResult);
+
+  if (searchResult.length === 0) {
+    alert("Nothing !");
+  } else {
+    let resault = "";
+    let i = 1;
+    searchResult.forEach(function (item) {
+      resault += i + "." + item + "\n";
+      i++;
+    });
+    alert(resault);
+  }
 }
