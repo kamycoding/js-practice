@@ -7,17 +7,42 @@ const basket = [
   { id: 6, name: "hard", price: 60 },
 ];
 
-// Way 1 (filter method)
+//* Way 1 (filter method)
 
-let filteredProduct = basket.filter(function (product) {
-  return product.price < 100;
-});
-let postCost = filteredProduct.length * 10;
+// let filteredProduct = basket.filter(function (product) {
+//   return product.price < 100;
+// });
+// let postCost = filteredProduct.length * 10;
 
-let sum = 0;
-basket.forEach(function (product) {
-  sum += product.price;
-});
+// let sum = 0;
+// basket.forEach(function (product) {
+//   sum += product.price;
+// });
 
-const totalPrice = sum + postCost;
-console.log("Total Price --> ", totalPrice);
+// const totalPrice = sum + postCost;
+// console.log("Total Price --> ", totalPrice);
+
+//* Way 2 (Map Method)
+// let postCost = 0;
+// let sum = 0;
+// basket.map(function (product) {
+//   if (product.price < 100) {
+//     postCost += 10;
+//   }
+//   sum += product.price;
+// });
+
+// const totalPrice = sum + postCost;
+// console.log("Total Price --> ", totalPrice);
+
+const userInput = prompt("Type a Word");
+
+const wordSplit = userInput.split("");
+const wordRevers = wordSplit.reverse();
+const wordJoin = wordRevers.join("");
+
+if (userInput === wordJoin) {
+  alert("yes");
+} else {
+  alert("no");
+}
