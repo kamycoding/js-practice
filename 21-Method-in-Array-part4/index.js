@@ -34,7 +34,6 @@ const students = [
 ];
 
 const users = ["kamy", "sog", "shadi", "tania"];
-const scores = [12, 16, 22, 32, 33, 54, 199, 215, 1254];
 const products = [
   { id: 1, title: "pen", price: 12 },
   { id: 2, title: "pencil", price: 4 },
@@ -44,8 +43,20 @@ const products = [
   { id: 6, title: "soft drink", price: 42 },
 ];
 
-const mappedScores = users.map(function (score) {
-  console.log(score);
-  return score + 10;
+const scores = [12, 16, 22, 32, 33, 54, 199, 215, 1254];
+
+// const mappedScores = scores.map(function (score) {
+//   console.log(score);
+//   if (score < 30) {
+//     return score + 10;
+//   }
+
+//   return score;
+// });
+// console.log(mappedScores);
+
+const newStudents = students.map(function (student) {
+  student.age = student.age + 2;
+  return student;
 });
-console.log(mappedScores);
+console.log(newStudents);
