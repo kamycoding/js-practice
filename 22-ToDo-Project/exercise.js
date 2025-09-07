@@ -47,6 +47,6 @@ if (isNaN(userChoice)) {
       }
     }
   } else {
-    console.log("is done");
+    //codes
   }
 }
