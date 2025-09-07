@@ -1,0 +1,35 @@
+let todos = [
+  { id: 1, title: "Learn Javascript", isDone: false },
+  { id: 2, title: "Learn NPM", isDone: false },
+  { id: 3, title: "Learn Deustch", isDone: false },
+];
+
+const userChoice = +prompt(
+  "Choose Number :" +
+    "\n1. ➕ Add Todo" +
+    "\n2. 💥 Delet Todo" +
+    "\n3. ✅ Is Done :)"
+);
+if (isNaN(userChoice)) {
+  alert("Please type a number!");
+} else if (userChoice !== 1 && userChoice !== 2 && userChoice !== 3) {
+  alert("please type just 1 or 2 or 3 :)");
+} else {
+  if (userChoice === 1) {
+    const todoName = prompt("What's your Todo's Name ? ");
+    if (todoName.trim().length === 0) {
+      alert("please write your todo");
+    } else {
+      let newTodo = {
+        id: todos.length + 1,
+        title: todoName,
+        isDone: false,
+      };
+      todos.push(newTodo);
+    }
+  } else if (userChoice === 2) {
+    console.log("delet todo");
+  } else {
+    console.log("is done");
+  }
+}
