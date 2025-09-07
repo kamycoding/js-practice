@@ -1,13 +1,13 @@
 let todos = [
   { id: 1, title: "Learn Javascript", isDone: false },
   { id: 2, title: "Learn NPM", isDone: false },
-  { id: 3, title: "Learn Deustch", isDone: false },
+  { id: 3, title: "Learn Deutsch", isDone: false },
 ];
 
 const userChoice = +prompt(
   "Choose Number :" +
     "\n1. ➕ Add Todo" +
-    "\n2. 💥 Delet Todo" +
+    "\n2. 💥 Delete Todo" +
     "\n3. ✅ Is Done :)"
 );
 if (isNaN(userChoice)) {
@@ -26,9 +26,19 @@ if (isNaN(userChoice)) {
         isDone: false,
       };
       todos.push(newTodo);
+      alert("Successfully added to TODOS");
+      console.log("Your Todos -->", todos);
     }
   } else if (userChoice === 2) {
-    console.log("delet todo");
+    const deleteItem = prompt("Select the todo you want to delete.");
+    if (deleteItem.trim().length === 0) {
+      alert("please Select the todo you want to delete.");
+    } else {
+      const deleteIndex = todos.findIndex(function (todo) {
+        return todo.title === deleteItem;
+      });
+      console.log(deleteIndex);
+    }
   } else {
     console.log("is done");
   }
