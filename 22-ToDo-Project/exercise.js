@@ -38,6 +38,13 @@ if (isNaN(userChoice)) {
         return todo.title === deleteItem;
       });
       console.log(deleteIndex);
+      if (deleteIndex === -1) {
+        alert("Item is not find");
+      } else {
+        todos.splice(deleteIndex, 1);
+        alert("Successfully deleted.");
+        console.log("Updated Todos -->", todos);
+      }
     }
   } else {
     console.log("is done");
