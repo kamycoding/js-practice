@@ -35,7 +35,7 @@ if (isNaN(userChoice)) {
       alert("please Select the todo you want to delete.");
     } else {
       const deleteIndex = todos.findIndex(function (todo) {
-        return todo.title === deleteItem;
+        return todo.title.toLowerCase() === deleteItem.trim().toLowerCase();
       });
       console.log(deleteIndex);
       if (deleteIndex === -1) {
@@ -47,6 +47,19 @@ if (isNaN(userChoice)) {
       }
     }
   } else {
-    //codes
+    const changeTodo = prompt("Which todo do you want to change?");
+    if (changeTodo.trim().length === 0) {
+      alert("Please -> Which todo do you want to change?");
+    } else {
+      const foundTodo = todos.find(function (todo) {
+        return todo.title.toLowerCase() === changeTodo.trim().toLowerCase();
+      });
+      console.log(foundTodo);
+      if (foundTodo === undefined) {
+        alert("...");
+      } else {
+        foundTodo.isDone = true;
+      }
+    }
   }
 }
