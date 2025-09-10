@@ -1,5 +1,7 @@
 //* import / export
 
-// import {username, number} from "./utils.js"
+let username = "kamycoding";
 
-import * as Utils from "./utils";
+let number = 13;
+
+export { username, number };
