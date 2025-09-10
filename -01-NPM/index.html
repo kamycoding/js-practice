@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – kamycoding</title>
+
+    <!-- JetBrains Mono font (similar to Azertemono) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #1f1f1f;
+        color: #ffffff;
+        font-family: "JetBrains Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        margin-top: 0.3rem;
+        color: #ff9800;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #ccc;
+        margin-bottom: 2rem;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a.button {
+        background-color: #ff9800;
+        color: #1f1f1f;
+        padding: 0.6rem 1.2rem;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      a.button:hover {
+        background-color: #ffa733;
+      }
+
+      a.button.site {
+        background-color: #00bcd4;
+        color: #000;
+      }
+
+      a.button.site:hover {
+        background-color: #26c6da;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals</h1>
+    <div class="tagline">@kamycoding 👨🏻‍💻</div>
+    <p>Learning JavaScript step by step with style 🚀</p>
+
+    <div class="buttons">
+      <a class="button" href="https://github.com/kamycoding" target="_blank"
+        >GitHub</a
+      >
+      <a class="button site" href="https://www.kamycoding.com" target="_blank"
+        >My Website</a
+      >
+    </div>
+    <!-- <script src="./exercise.js"></script> -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
