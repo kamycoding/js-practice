@@ -10,3 +10,6 @@ console.log("Num2 = " + num2);
 let user1 = { id: 1, name: "kamycoding", age: 27 };
 let user2 = user1;
 let user3 = user2;
+
+user2.city = "Sankt-Augustin";
+user3.name = "sog";
