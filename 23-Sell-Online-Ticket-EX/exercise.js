@@ -17,13 +17,30 @@ const provincesData = {
 
 //* Way 2
 
-const userProvince = prompt("Enter your state:").trim().toLowerCase();
-if (!userProvince) {
-  alert("Please enter a state name!");
-} else if (!provincesData[userProvince]) {
-  alert("State not found! " + Object.keys(provincesData).join(", "));
-} else {
-  const cities = provincesData[userProvince].join(", ");
-  alert(`List of Cities: ${cities}`);
-  console.log(provincesData[userProvince]);
-}
+// const userProvince = prompt("Enter your state:").trim().toLowerCase();
+// if (!userProvince) {
+//   alert("Please enter a state name!");
+// } else if (!provincesData[userProvince]) {
+//   alert("State not found! " + Object.keys(provincesData).join(", "));
+// } else {
+//   const cities = provincesData[userProvince].join(", ");
+//   alert(`List of Cities: ${cities}`);
+//   console.log(provincesData[userProvince]);
+// }
+const questions = [
+  {
+    question: "Welche Stadt ist Hauptstadt in Deutschland?",
+    options: { a: "Hamburg", b: "Berlin", c: "Sankt-Auguston" },
+    correctAnswer: "b",
+  },
+  {
+    question: "Welches Bundesland liegt im Süden Deutschlands?",
+    options: { a: "Bayern", b: "Hessen", c: "Nordrhein-Westfalen" },
+    correctAnswer: "a",
+  },
+  {
+    question: "Welche Stadt liegt am Rhein?",
+    options: { a: "Köln", b: "München", c: "Nürnberg" },
+    correctAnswer: "a",
+  },
+];
