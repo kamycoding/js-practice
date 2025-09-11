@@ -51,5 +51,10 @@ for (const question of questions) {
   const userAnswer = prompt(fullQuestionText).trim().toLowerCase();
 
   if (userAnswer === question.correctAnswer) {
+    score++;
+  } else {
+    const correctAnswerKey = question.correctAnswer;
+    const correctAnswerText = question.options[correctAnswerKey];
+    alert(`this answer is flasch. :( the true answer is ${correctAnswerText})`);
   }
 }
