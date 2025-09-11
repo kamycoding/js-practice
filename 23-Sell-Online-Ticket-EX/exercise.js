@@ -1,8 +1,8 @@
-const provincesData = {
-  nordrhein_westfalen: ["Köln", "Düsseldorf", "Dortmund", "Essen"],
-  bayern: ["München", "Nürnberg", "Augsburg", "Würzburg"],
-  hessen: ["Frankfurt am Main", "Wiesbaden", "Darmstadt"],
-};
+// const provincesData = {
+//   nordrhein_westfalen: ["Köln", "Düsseldorf", "Dortmund", "Essen"],
+//   bayern: ["München", "Nürnberg", "Augsburg", "Würzburg"],
+//   hessen: ["Frankfurt am Main", "Wiesbaden", "Darmstadt"],
+// };
 
 //* Way 1
 // const userProvnice = prompt("Enter Your state :");
@@ -47,6 +47,9 @@ const questions = [
 
 let score = 0;
 for (const question of questions) {
-  const fullQuestionText = `${questions.question}\n a) ${question.options.a} \n b) ${questions.options.b} \n c) ${questions.options.c}`;
-  const userAnswer = prompt(fullQuestionText);
+  const fullQuestionText = `${question.question} \na) ${question.options.a} \nb) ${question.options.b} \nc) ${question.options.c} `;
+  const userAnswer = prompt(fullQuestionText).trim().toLowerCase();
+
+  if (userAnswer === question.correctAnswer) {
+  }
 }
