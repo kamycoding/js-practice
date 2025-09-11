@@ -30,7 +30,7 @@
 const questions = [
   {
     question: "Welche Stadt ist Hauptstadt in Deutschland?",
-    options: { a: "Hamburg", b: "Berlin", c: "Sankt-Auguston" },
+    options: { a: "Hamburg", b: "Berlin", c: "Sankt-Augustin" },
     correctAnswer: "b",
   },
   {
@@ -47,14 +47,32 @@ const questions = [
 
 let score = 0;
 for (const question of questions) {
-  const fullQuestionText = `${question.question} \na) ${question.options.a} \nb) ${question.options.b} \nc) ${question.options.c} `;
-  const userAnswer = prompt(fullQuestionText).trim().toLowerCase();
-
+  const fullQuestionText = `${question.question} \na) ${question.options.a} \nb) ${question.options.b} \nc) ${question.options.c}\nBitte geben Sie a, b oder c ein: `;
+  let userAnswer = prompt(fullQuestionText);
+  if (!userAnswer) {
+    alert("Keine Eingabe! Frage wird übersprungen.");
+    continue;
+  }
+  userAnswer = userAnswer.trim().toLowerCase();
+  if (!["a", "b", "c"].includes(userAnswer)) {
+    alert("Ungültige Eingabe! Bitte nur a, b oder c eingeben.");
+    continue;
+  }
   if (userAnswer === question.correctAnswer) {
     score++;
+    alert("✅ Richtig!");
   } else {
-    const correctAnswerKey = question.correctAnswer;
-    const correctAnswerText = question.options[correctAnswerKey];
-    alert(`this answer is flasch. :( the true answer is ${correctAnswerText})`);
+    // const correctAnswerKey = question.correctAnswer;
+    // const correctAnswerText = question.options[correctAnswerKey];
+    // alert(`this answer is false. :( the true answer is ${correctAnswerText})`);
+    alert(
+      `❌ Falsch! Deine Antwort: ${question.options[userAnswer]}. Richtig: ${
+        question.options[question.correctAnswer]
+      }`
+    );
   }
 }
+const percent = Math.round((score / questions.length) * 100);
+alert(
+  `Spiel beendet! Dein Punktestand: ${score} von ${questions.length} (${percent}%)`
+);
