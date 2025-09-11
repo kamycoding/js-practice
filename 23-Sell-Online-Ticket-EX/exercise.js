@@ -44,3 +44,9 @@ const questions = [
     correctAnswer: "a",
   },
 ];
+
+let score = 0;
+for (const question of questions) {
+  const fullQuestionText = `${questions.question}\n a) ${question.options.a} \n b) ${questions.options.b} \n c) ${questions.options.c}`;
+  const userAnswer = prompt(fullQuestionText);
+}
