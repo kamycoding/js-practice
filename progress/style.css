@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap");
+
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+  --background-color: #f6f7fb;
+  --text-color: #555;
+  --btn-disabled-color: #999;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: var(--btn-disabled-color);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+  color: var(--line-border-fill);
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* فاصله بین دکمه‌ها */
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  color: var(--btn-disabled-color);
+  cursor: not-allowed;
+}
