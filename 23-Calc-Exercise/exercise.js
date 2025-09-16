@@ -15,7 +15,24 @@
 
 const products = [
   { id: 1, name: "laptop", price: 100, shortLink: "pL3j" },
-  { id: 1, name: "mouse", price: 80, shortLink: "ms60" },
-  { id: 1, name: "kyboard", price: 60, shortLink: "dFp2" },
-  { id: 1, name: "light", price: 15, shortLink: "3Ed6" },
+  { id: 2, name: "mouse", price: 80, shortLink: "ms60" },
+  { id: 3, name: "kyboard", price: 60, shortLink: "dFp2" },
+  { id: 4, name: "light", price: 15, shortLink: "3Ed6" },
 ];
+
+const userShortLink = prompt("Enter your short link :");
+
+if (!userShortLink || userShortLink.trim().length === 0) {
+  alert("Please Enter Your Short Link !!");
+} else {
+  const foundProduct = products.find(function (product) {
+    return product.shortLink === userShortLink;
+  });
+  if (foundProduct) {
+    alert(
+      `Product Found!\n\nName: ${foundProduct.name}\nPrice: ${foundProduct.price}$`
+    );
+  } else {
+    alert("Not found! :(");
+  }
+}
