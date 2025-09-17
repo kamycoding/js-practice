@@ -13,6 +13,13 @@
 // console.log(textElemnts);
 
 const liElem = document.querySelector("li");
+const inputElem = document.querySelector("input");
 
 console.log(liElem.className); //* list-item
-console.log(liElem.innerHTML);
+console.log(liElem.innerHTML); //* about
+liElem.innerHTML = "Content";
+console.log(liElem.innerHTML); //* Content
+
+console.log(liElem.id); //* li-id
+console.log(inputElem);
+console.log(inputElem.value);
