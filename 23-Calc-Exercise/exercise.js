@@ -33,6 +33,12 @@ if (!userShortLink || userShortLink.trim().length === 0) {
       `Product Found!\n\nName: ${foundProduct.name}\nPrice: ${foundProduct.price}$`
     );
   } else {
-    alert("Not found! :(");
+    alert("Not found! :( try another shortlink");
   }
 }
+
+//* END
+
+/*
+ یک تیم کوچک اما پویاست که از طراحان محصول، توسعه‌دهندگان و پژوهشگران در حوزه‌ی Health-Tech تشکیل شده است. ما در حال توسعه‌ی یک پلتفرم مبتنی بر هوش مصنوعی هستیم که هدف آن پایش هوشمند رشد کودکان و ایجاد پرونده‌ی پزشکی دیجیتال برای پزشکان و والدین است.
+*/
