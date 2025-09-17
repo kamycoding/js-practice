@@ -18,8 +18,13 @@ let minutes = +prompt("Enter your Minutes :");
 let second = +prompt("Enter your Second");
 
 let timer = setInterval(function () {
+  if (second === -1) {
+    minutes--;
+    second = 59;
+  }
   if (minutes === 0 && second === 0) {
     clearInterval(timer);
+    alert("Game Over ! 😒 ");
   }
   console.log(`Timer : ${minutes}:${second}`);
   second--;
