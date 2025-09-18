@@ -14,6 +14,7 @@
 
 const liElem = document.querySelector("li");
 const inputElem = document.querySelector("input");
+const liElems = document.querySelectorAll("li");
 
 console.log(liElem.className); //* list-item
 console.log(liElem.innerHTML); //* about
@@ -25,3 +26,4 @@ console.log(inputElem);
 console.log(inputElem.value); //* kamycoding
 
 liElem.style.color = "blue";
+console.log(liElems[0].className);
