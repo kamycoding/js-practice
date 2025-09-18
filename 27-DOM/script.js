@@ -22,4 +22,6 @@ console.log(liElem.innerHTML); //* Content
 
 console.log(liElem.id); //* li-id
 console.log(inputElem);
-console.log(inputElem.value);
+console.log(inputElem.value); //* kamycoding
+
+liElem.style.color = "blue";
