@@ -8,12 +8,18 @@
 const itemElems = document.querySelectorAll(".list-item");
 const btn = document.querySelector(".click-btn");
 
-btn.addEventListener("click", logger);
-
-function logger() {
+btn.addEventListener("click", function logger() {
   console.log("Clicked!");
   itemElems.forEach(function (li) {
     li.style.color = "red";
     li.style.fontSize = "36px";
   });
-}
+});
+
+// function logger() {
+//   console.log("Clicked!");
+//   itemElems.forEach(function (li) {
+//     li.style.color = "red";
+//     li.style.fontSize = "36px";
+//   });
+// }
