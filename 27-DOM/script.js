@@ -29,3 +29,5 @@ liElem.style.color = "blue";
 console.log(liElems[0].className);
 
 liElem.setAttribute("id", "test-id");
+const getAtt = liElem.getAttribute("id");
+console.log(getAtt);
