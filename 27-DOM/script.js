@@ -27,3 +27,5 @@ console.log(inputElem.value); //* kamycoding
 
 liElem.style.color = "blue";
 console.log(liElems[0].className);
+
+liElem.setAttribute("id", "test-id");
