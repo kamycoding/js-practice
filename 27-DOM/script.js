@@ -15,6 +15,7 @@
 const liElem = document.querySelector("li");
 const inputElem = document.querySelector("input");
 const liElems = document.querySelectorAll("li");
+const itemElem = document.querySelectorAll(".list-item");
 
 console.log(liElem.className); //* list-item
 console.log(liElem.innerHTML); //* about
@@ -31,3 +32,7 @@ console.log(liElems[0].className);
 liElem.setAttribute("id", "test-id");
 const getAtt = liElem.getAttribute("id");
 console.log(getAtt);
+
+itemElem.forEach(function (li) {
+  li.style.color = "blue";
+});
