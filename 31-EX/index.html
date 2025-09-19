@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .emoji-container {
+        text-align: center;
+      }
+      .emoji {
+        width: 100px;
+      }
+      .btn {
+        display: block;
+        margin: 0 auto;
+        min-width: 160px;
+        background-color: lightblue;
+        border: none;
+        font-family: monospace;
+        border-radius: 8px;
+        font-size: 24px;
+        padding: 12px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
+    <div class="emoji-container">
+      <img id="emoji-display" alt="Emoji-Face" class="emoji" />
+    </div>
+    <hr />
+    <button id="toggle-btn" class="btn"></button>
     <script src="./script.js"></script>
   </body>
 </html>
