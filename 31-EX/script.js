@@ -16,3 +16,6 @@ btn.addEventListener("click", function toggleModd() {
     btn.textContent = "Make Happy";
   }
 });
+
+const new = "kamycoding"
+
