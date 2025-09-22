@@ -18,4 +18,4 @@ btn.addEventListener("click", function toggleModd() {
 });
 
 const new = "kamycoding"
-
+const new2 = "kam"
