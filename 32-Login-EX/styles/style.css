@@ -1,0 +1,131 @@
+/* تنظیمات کلی صفحه */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+/* کانتینر اصلی فرم */
+.login-container {
+  background-color: white;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* گروه لیبل و اینپوت */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4b4f56;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+/* استایل کلی دکمه‌ها */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased; /* برای رندر بهتر فونت */
+}
+
+/* دکمه اصلی ورود */
+.btn-primary {
+  background-color: #1877f2;
+  color: white;
+  margin-top: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #166fe5;
+}
+
+/* جداکننده "یا" */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #8a8d91;
+  margin: 24px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dddfe2;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 1em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 1em;
+}
+
+/* دکمه ورود با گوگل */
+.google-btn {
+  background-color: #ffffff;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.google-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #c6c6c6;
+}
+
+.google-btn svg {
+  width: 20px;
+  height: 20px;
+}
