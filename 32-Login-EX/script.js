@@ -5,7 +5,8 @@ const loginBtn = document.querySelector("#login-btn");
 const usernameError = document.querySelector("#username-error");
 const passwordError = document.querySelector("#password-error");
 
-loginBtn.addEventListener("click", function () {
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
   console.log(usernameInput.value);
-  console.log(passwordInputS.value);
+  console.log(passwordInput.value);
 });
