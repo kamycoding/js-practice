@@ -9,7 +9,9 @@ body {
   background-color: #f0f2f5;
   color: #1c1e21;
 }
-
+.hidden {
+  display: none;
+}
 .login-container {
   background-color: white;
   padding: 32px 40px;
@@ -121,4 +123,9 @@ body {
 .google-btn svg {
   width: 20px;
   height: 20px;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 12px;
 }

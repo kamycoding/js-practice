@@ -20,7 +20,9 @@
               placeholder="E-Mail-Adresse eingeben"
               required
             />
-            <p class="error-message" id="username-error"></p>
+            <p class="error-message hidden" id="username-error">
+              Benutzername muss mindestens 3 Zeichen lang sein
+            </p>
           </div>
           <div class="input-group">
             <label for="password">Passwort</label>
@@ -31,7 +33,9 @@
               placeholder="Passwort eingeben"
               required
             />
-            <p class="error-message" id="password-error"></p>
+            <p class="error-message hidden" id="password-error">
+              Passwort muss mindestens 5 Zeichen lang sein
+            </p>
           </div>
           <button id="login-btn" type="submit" class="btn btn-primary">
             Einloggen
