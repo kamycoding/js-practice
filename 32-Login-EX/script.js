@@ -4,6 +4,8 @@ const passwordInput = document.querySelector("#password");
 const loginBtn = document.querySelector("#login-btn");
 const usernameError = document.querySelector("#username-error");
 const passwordError = document.querySelector("#password-error");
+let isUsernameValid = false;
+let isPasswordValid = false;
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -12,12 +14,16 @@ form.addEventListener("submit", function (event) {
 
   if (usernameInput.value.length <= 3) {
     usernameError.classList.remove("hidden");
+    isUsernameValid = false;
   } else {
     usernameError.classList.add("hidden");
+    isUsernameValid = true;
   }
   if (passwordInput.value.length <= 5) {
     passwordError.classList.remove("hidden");
+    isPasswordValid = false;
   } else {
     passwordError.classList.add("hidden");
+    isPasswordValid = true;
   }
 });
