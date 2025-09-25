@@ -15,3 +15,11 @@ console.log(newNumbers);
 const newNumbers2 = numbers.map((number) => number * 3);
 
 console.log(newNumbers2);
+
+const result = numbers.find((number) => {
+  console.log(number);
+  const isEqual = number === 3;
+  console.log(isEqual);
+  return isEqual;
+});
+console.log("result:", result);
