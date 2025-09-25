@@ -11,3 +11,7 @@ numbers.forEach((number) => {
   newNumbers.push(number * 2);
 });
 console.log(newNumbers);
+
+const newNumbers2 = numbers.map((number) => number * 3);
+
+console.log(newNumbers2);
