@@ -26,4 +26,7 @@ form.addEventListener("submit", function (event) {
     passwordError.classList.add("hidden");
     isPasswordValid = true;
   }
+  if (isPasswordValid && isUsernameValid) {
+    alert(`Wilkommen, ${usernameInput.value}!`);
+  }
 });
