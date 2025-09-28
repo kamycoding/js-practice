@@ -34,3 +34,6 @@ let accumulator = 0;
 numbers.forEach((number) => {
   accumulator += number;
 });
+
+const result = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(result);
