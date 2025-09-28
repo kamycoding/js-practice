@@ -24,6 +24,13 @@ const newNumbers = [];
 // });
 // console.log("result:", result);
 
-const resault = numbers.filter((number) => number === 5);
+// const resault = numbers.filter((number) => number === 5);
 
-console.log(resault);
+// console.log(resault);
+
+//* reduce
+
+let accumulator = 0;
+numbers.forEach((number) => {
+  accumulator += number;
+});
