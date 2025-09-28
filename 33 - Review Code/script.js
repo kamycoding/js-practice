@@ -40,10 +40,14 @@ console.log(result);
 
 //* every - some
 
-const datas = [1, 2, 3, 4, 5, 6];
+const datas = [1, 2, "3", 4, 5, 6];
 
-const allEven = datas.every((item) => {
-  const isTrue = typeof item === "number";
-  return isTrue;
-});
+// const allEven = datas.every((item) => {
+//   const isTrue = typeof item === "number";
+//   return isTrue;
+// });
+const allEven = datas.every((item) => typeof item === "number");
 console.log(allEven);
+
+const someEven = datas.some((item) => typeof item === "number");
+console.log(someEven);
