@@ -1,53 +1,74 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 5];
-const newNumbers = [];
+// Challenge 1. Find customers with age>60 and age<10
+// Challenge 2. Build customer data with title and full name
 
-// numbers.forEach((number, index) => {
-//   console.log(`number: ${number}`);
-//   console.log(`index: ${index}`);
-//   console.log("-----------");
-// });
+let customers = [
+  {
+    id: 1,
+    f_name: "Abby",
+    l_name: "Thomas",
+    gender: "M",
+    married: true,
+    age: 32,
+    expense: 500,
+    purchased: ["Shampoo", "Toys", "Book"],
+  },
+  {
+    id: 2,
+    f_name: "Jerry",
+    l_name: "Tom",
+    gender: "M",
+    married: true,
+    age: 64,
+    expense: 100,
+    purchased: ["Stick", "Blade"],
+  },
+  {
+    id: 3,
+    f_name: "Dianna",
+    l_name: "Cherry",
+    gender: "F",
+    married: true,
+    age: 22,
+    expense: 1500,
+    purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+  },
+  {
+    id: 4,
+    f_name: "Dev",
+    l_name: "Currian",
+    gender: "M",
+    married: true,
+    age: 82,
+    expense: 90,
+    purchased: ["Book"],
+  },
+  {
+    id: 5,
+    f_name: "Maria",
+    l_name: "Gomes",
+    gender: "F",
+    married: false,
+    age: 7,
+    expense: 300,
+    purchased: ["Toys"],
+  },
+];
+console.log("ok");
 
-// numbers.forEach((number) => {
-//   newNumbers.push(number * 2);
-// });
-// console.log(newNumbers);
+const result = customers.filter(
+  (customer) => customer.age > 60 || customer.age < 10
+);
 
-// const newNumbers2 = numbers.map((number) => number * 3);
-
-// console.log(newNumbers2);
-
-// const result = numbers.find((number) => {
-//   console.log(number);
-//   const isEqual = number === 3;
-//   console.log(isEqual);
-//   return isEqual;
-// });
-// console.log("result:", result);
-
-// const resault = numbers.filter((number) => number === 5);
-
-// console.log(resault);
-
-//* reduce
-
-let accumulator = 0;
-numbers.forEach((number) => {
-  accumulator += number;
+const newCustomers = customers.map((customer) => {
+  let title = "";
+  if (customer.gender === "M") {
+    title = "Mr .";
+  } else if (customer.gender === "F" && customer.married) {
+    title = "Mrs .";
+  } else {
+    title = "Miss .";
+  }
+  customer.fullName = `${title} ${customer.f_name} ${customer.l_name}`;
+  return customer;
 });
-
-const result = numbers.reduce((acc, curr) => acc + curr, 0);
-console.log(result);
-
-//* every - some
-
-const datas = [1, 2, "3", 4, 5, 6];
-
-// const allEven = datas.every((item) => {
-//   const isTrue = typeof item === "number";
-//   return isTrue;
-// });
-const allEven = datas.every((item) => typeof item === "number");
-console.log(allEven);
-
-const someEven = datas.some((item) => typeof item === "number");
-console.log(someEven);
+console.log(newCustomers);
