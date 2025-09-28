@@ -1,5 +1,5 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 5];
-const newNumbers = [];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 5];
+// const newNumbers = [];
 
 // numbers.forEach((number, index) => {
 //   console.log(`number: ${number}`);
@@ -30,24 +30,39 @@ const newNumbers = [];
 
 //* reduce
 
-let accumulator = 0;
-numbers.forEach((number) => {
-  accumulator += number;
-});
+// let accumulator = 0;
+// numbers.forEach((number) => {
+//   accumulator += number;
+// });
 
-const result = numbers.reduce((acc, curr) => acc + curr, 0);
-console.log(result);
+// const result = numbers.reduce((acc, curr) => acc + curr, 0);
+// console.log(result);
 
 //* every - some
 
-const datas = [1, 2, "3", 4, 5, 6];
+// const datas = [1, 2, "3", 4, 5, 6];
 
 // const allEven = datas.every((item) => {
 //   const isTrue = typeof item === "number";
 //   return isTrue;
 // });
-const allEven = datas.every((item) => typeof item === "number");
-console.log(allEven);
+// const allEven = datas.every((item) => typeof item === "number");
+// console.log(allEven);
 
-const someEven = datas.some((item) => typeof item === "number");
-console.log(someEven);
+// const someEven = datas.some((item) => typeof item === "number");
+// console.log(someEven);
+
+//* this and bind
+
+globalThis.name = "kamy";
+const data = {
+  name: "sog",
+  show() {
+    console.log(this.name);
+  },
+};
+
+data.show();
+const func = data.show;
+
+func();
