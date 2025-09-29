@@ -69,15 +69,15 @@ globalThis.name = "kamy";
 
 //* bind
 
-function sayMyName(age) {
-  console.log("Age :", age);
+function sayMyName(age, lastName) {
+  console.log("Age :", age, "lastName :", lastName);
   console.log(`your name is ${this.name}`);
 }
-sayMyName(27);
+sayMyName(27, "coding");
 const data = { name: "sog" };
 // sayMyName = sayMyName.bind(data, 33);
 // sayMyName();
 
 //* call and apply
 
-sayMyName.call(data);
+sayMyName.call(data, 33, "developer");
