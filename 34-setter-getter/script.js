@@ -29,12 +29,16 @@
 // console.log(like());
 // console.log(like());
 
-let likesCounter = 0;
-const like = () => {
-  likesCounter++;
-  return likesCounter;
-};
+// let likesCounter = 0;
+// const like = () => {
+//   likesCounter++;
+//   return likesCounter;
+// };
 
-console.log(like());
-console.log(like());
-console.log(like());
+// console.log(like());
+// console.log(like());
+// console.log(like());
+
+function like() {
+  return function () {};
+}
