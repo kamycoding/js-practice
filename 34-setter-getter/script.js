@@ -40,5 +40,9 @@
 // console.log(like());
 
 function like() {
-  return function () {};
+  let likesCounter = 0;
+  return function () {
+    likesCounter++;
+    return likesCounter;
+  }; //! Closure
 }
