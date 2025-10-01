@@ -39,6 +39,12 @@
 // console.log(like());
 // console.log(like());
 
+// Lexical Scope
+// const like = like();
+// console.log(like());
+// console.log(like());
+// console.log(like());
+
 function like() {
   let likesCounter = 0;
   return function () {
@@ -46,3 +52,7 @@ function like() {
     return likesCounter;
   }; //! Closure
 }
+
+//! Pure - Impure Function
+const dublicate = (number) => number * 2;
+console.log(dublicate(5));
