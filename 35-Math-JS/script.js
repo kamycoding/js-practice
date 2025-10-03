@@ -20,3 +20,7 @@ console.log(Math.round(number)); // 3
 console.log(Math.trunc(number)); // 2
 console.log(Math.ceil(number)); // 3
 console.log(Math.floor(number)); // 2
+
+console.log(Math.pow(2, 3)); // 2 ** 3
+console.log(Math.sqrt(4)); // 2
+console.log(Math.abs(number));
