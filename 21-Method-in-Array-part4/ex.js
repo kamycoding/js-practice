@@ -51,5 +51,13 @@ const basket = [
 const myMaps = new Map();
 
 myMaps.set("name", "kamycoding");
+myMaps.set("age", "27");
+myMaps.set(3, 13);
 
+const result = myMaps.get("name");
+const size = myMaps.size;
+const removeItem = myMaps.delete("age");
 console.log(myMaps);
+console.log(result);
+console.log(size);
+console.log(removeItem);
