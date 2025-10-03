@@ -9,6 +9,7 @@ try {
   console.log("Done!");
 } catch (error) {
   console.log("Error:", error.message);
+  throw "An error occurred";
 } finally {
   //clean up function
   console.log("Final");
