@@ -13,3 +13,10 @@ console.log(date.getDate());
 console.log(date.getHours());
 console.log(date.getMinutes());
 console.log(date.getTime());
+
+const number = 2.63;
+
+console.log(Math.round(number)); // 3
+console.log(Math.trunc(number)); // 2
+console.log(Math.ceil(number)); // 3
+console.log(Math.floor(number)); // 2
