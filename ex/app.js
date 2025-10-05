@@ -37,6 +37,36 @@
 // const [{ name }, { city }] = users;
 // console.log(name, city);
 
-const user = { name: "kamy" };
-const { age = 20, name } = user;
-console.log({ age, name });
+// const user = { name: "kamy" };
+// const { age = 20, name } = user;
+// console.log({ age, name });
+
+// const response = {
+//   data: {
+//     user: { name: "Mohammad", scores: [85, 90, 78] },
+//   },
+// };
+
+// const {
+//   data: {
+//     user: {
+//       name,
+//       scores: [firstScore],
+//     },
+//   },
+// } = response;
+// console.log(name);
+// console.log(firstScore);
+
+// const fruits = ["apple", "banana"];
+// const vegetables = ["carrot", "potato"];
+// const allFood = [...fruits, ...vegetables];
+
+// const user = { name: "Ali", age: 25 };
+// const address = { city: "Tehran", country: "Iran" };
+// const userAddres = { ...user, ...address };
+// console.log(userAddres);
+
+const user = { name: "Ali", age: 25, city: "Tehran" };
+const newUser = { ...user, city: "Bonn" };
+console.log(newUser);
