@@ -38,3 +38,5 @@ if (!userShortLink || userShortLink.trim().length === 0) {
 }
 
 //* END
+
+const some = "kamy";
