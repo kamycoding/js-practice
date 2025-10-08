@@ -67,6 +67,10 @@
 // const userAddres = { ...user, ...address };
 // console.log(userAddres);
 
-const user = { name: "Ali", age: 25, city: "Tehran" };
-const newUser = { ...user, city: "Bonn" };
-console.log(newUser);
+// const user = { name: "Ali", age: 25, city: "Tehran" };
+// const newUser = { ...user, city: "Bonn" };
+// console.log(newUser);
+
+//reduce
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers.reduce(() => {}, 0);
