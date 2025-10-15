@@ -1,22 +1,13 @@
-#countLabel {
-  display: block;
-  text-align: center;
-  font-size: 10em;
-  font-family: Helvetica, sans-serif;
-}
-#btnContainer {
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-.buttons {
-  padding: 10px 20px;
-  font-size: 1.5em;
-  color: white;
-  background-color: rgb(131, 166, 255);
-  border-radius: 12px;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
+#myButton {
+  font-size: 2em;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-right: 20px;
 }
-.buttons:hover {
-  background-color: rgb(96, 141, 254);
+#myLabel {
+  font-size: 3em;
 }
