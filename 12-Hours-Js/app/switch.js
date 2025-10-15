@@ -24,4 +24,7 @@ switch (day) {
   case 6:
     alert("sunday");
     break;
+  default:
+    alert("Invalid input! Please enter a number between 0 and 6.");
+    break;
 }
