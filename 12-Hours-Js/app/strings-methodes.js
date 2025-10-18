@@ -15,3 +15,5 @@ console.log(userName.includes("k"));
 const name = "kamycoding";
 const age = 25;
 const country = "USA";
+
+console.log(name);
