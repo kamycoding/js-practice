@@ -17,3 +17,4 @@ const age = 25;
 const country = "USA";
 
 console.log(name);
+console.log(age);
