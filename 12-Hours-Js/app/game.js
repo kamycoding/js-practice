@@ -7,6 +7,12 @@ if (playerChoice) {
   console.log("you cheated!");
 }
 
+//! Refactoring 
+const checkWinner = (player, computer ) => {
+    
+}
+
+
 const randomNumber = Math.floor(Math.random() * choices.length);
 const computerChoice = choices[randomNumber];
 console.log(`Computer chooses ${computerChoice}`);
