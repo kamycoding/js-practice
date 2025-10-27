@@ -5,9 +5,16 @@ body {
 
 .container {
   background-color: aquamarine;
+  padding: 12px 6px;
 }
 
 .container2 {
   background-color: bisque;
-  color: aliceblue;
+  color: rgb(114, 189, 255);
+  padding: 12px 6px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
 }
