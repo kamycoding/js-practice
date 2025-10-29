@@ -8,7 +8,7 @@
 // const elements = document.querySelectorAll("p");
 // console.log(elements);
 
-const element = document.querySelector(".container");
+// const element = document.querySelector(".container");
 // element.style.color = "lightblue";
 // element.style.backgroundColor = "gray";
 // element.style.padding = "20px";
@@ -16,10 +16,13 @@ const element = document.querySelector(".container");
 // element.style.textAlign = "center";
 // element.className = "container2";
 // element.className = "container text"
-element.classList.add("text");
-element.classList.toggle("text");
-setInterval(() => {
-  element.classList.toggle("container2");
-}, 2000);
+// element.classList.add("text");
+// element.classList.toggle("text");
+// setInterval(() => {
+//   element.classList.toggle("container2");
+// }, 2000);
 
 //! inserting to DOM
+const element = document.querySelector("div");
+element.innerHTML = "<span>Hello</span>";
+element.innerHTML += "<h2>Subheading</h2>";
