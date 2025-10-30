@@ -10,5 +10,10 @@
 
 //*multiple Selector
 // const elements = document.querySelectorAll("p");
-const elements = document.querySelectorAll(".text");
-console.log(elements);
+// const elements = document.querySelectorAll(".text");
+// console.log(elements);
+
+const spanTag = document.createElement("span");
+spanTag.innerHTML = "add span";
+spanTag.className = "span-class";
+console.log(spanTag);
