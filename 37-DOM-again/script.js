@@ -17,3 +17,12 @@ const spanTag = document.createElement("span");
 spanTag.innerHTML = "add span";
 spanTag.className = "span-class";
 console.log(spanTag);
+
+// delete from DOM
+const element = document.querySelector("div");
+
+// Event Listener
+const btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+  console.log("Hi kamycoding");
+});
