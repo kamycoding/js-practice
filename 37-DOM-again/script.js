@@ -23,6 +23,7 @@ const element = document.querySelector("div");
 
 // Event Listener
 const btn = document.querySelector("button");
-btn.addEventListener("click", function () {
+const showHandler = () => {
   console.log("Hi kamycoding");
-});
+};
+btn.addEventListener("click", showHandler);
