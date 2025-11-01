@@ -13,17 +13,32 @@
 // const elements = document.querySelectorAll(".text");
 // console.log(elements);
 
-const spanTag = document.createElement("span");
-spanTag.innerHTML = "add span";
-spanTag.className = "span-class";
-console.log(spanTag);
+// const spanTag = document.createElement("span");
+// spanTag.innerHTML = "add span";
+// spanTag.className = "span-class";
+// console.log(spanTag);
 
 // delete from DOM
-const element = document.querySelector("div");
+// const element = document.querySelector("div");
 
 // Event Listener
-const btn = document.querySelector("button");
-const showHandler = () => {
-  console.log("Hi kamycoding");
+// const btn = document.querySelector("button");
+// const showHandler = () => {
+//   console.log("Hi kamycoding");
+// };
+// btn.addEventListener("click", showHandler);
+
+const button = document.querySelector("button");
+const div = document.querySelector("div");
+
+const showHandler = (event) => {
+  console.log(event.target);
 };
-btn.addEventListener("click", showHandler);
+
+button.addEventListener("click", showHandler);
+div.addEventListener("click", showHandler);
+
+
+// dataset
+
+const h1 = document.querySelector("h1");
