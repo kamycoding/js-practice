@@ -25,5 +25,16 @@ const random = new Promise((resolve, reject) => {
   });
 }, 2000);
 
-random.then((result) => console.log(result));
-random.catch((error) => console.log(error));
+// random.then((result) => result * 10).then((number) => console.log(number));
+// random.catch((error) => console.log(error));
+
+random
+  .then((result) => {
+    return result * 10;
+  })
+  .then((number) => {
+    console.log(number);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
