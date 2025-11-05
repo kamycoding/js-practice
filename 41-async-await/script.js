@@ -1,6 +1,7 @@
 //async - await
 
-const promise = new Promise((resolve, reject) => {
+const duplicate = new Promise((resolve, reject) => {
+  console.log("start");
   setTimeout(() => {
     const result = number * 2;
     resolve(result);
@@ -19,4 +20,9 @@ const add = (number) => {
   return promise;
 };
 
-function start() {}
+async function start() {
+  const number = duplicate(5);
+  console.log(number);
+  console.log("end");
+}
+start();
